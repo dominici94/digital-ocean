@@ -26,6 +26,10 @@
           <a href="#"><img src="../../assets/img/splunk.svg" alt="splunk" /></a>
         </div>
       </div>
+
+      <a id="redirect" href="#">
+        View customer stories<i class="fa-solid fa-chevron-right arrow"></i
+      ></a>
     </div>
   </section>
 </template>
@@ -37,15 +41,26 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h3 {
-  color: grey;
-}
-.row {
-  a {
-    width: 100%;
+section {
+  background-color: #f3f5f9;
+  h3 {
+    color: grey;
+  }
+  .row {
+    a {
+      width: 100%;
 
-    img {
-      width: 80%;
+      img {
+        width: 80%;
+      }
+    }
+  }
+  #redirect {
+    text-decoration: none;
+
+    .arrow {
+      font-size: 1rem;
+      margin-left: 5px;
     }
   }
 }
