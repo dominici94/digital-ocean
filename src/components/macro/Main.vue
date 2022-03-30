@@ -4,6 +4,7 @@
     <Deploy />
     <FirstSlider />
     <Features />
+    <Regions />
   </main>
 </template>
 
@@ -12,6 +13,7 @@ import Collaborations from "../sections/Collaborations.vue";
 import Deploy from "../../components/sections/Deploy.vue";
 import FirstSlider from "../../components/sections/FirstSlider.vue";
 import Features from "../../components/sections/Features.vue";
+import Regions from "../../components/sections/Regions.vue";
 
 export default {
   name: "Main",
@@ -20,6 +22,7 @@ export default {
     Deploy,
     FirstSlider,
     Features,
+    Regions,
   },
 };
 </script>
