@@ -1,6 +1,13 @@
 <template>
   <footer class="footer">
     <div class="container-lg">
+      <div id="question" class="questionsAnswers">
+        <div class="notifiche">2</div>
+        <img src="../../assets/img/shark.png" alt="squalo" />
+      </div>
+      <div class="text-qa visible">
+        Can I help answer any questions you have about DigitalOcean?
+      </div>
       <div class="row py-5">
         <div class="col-12 col-lg-4 head">
           <div class="img-container">
@@ -93,6 +100,66 @@ export default {
   background-color: rgb(2, 2, 44);
   color: gray;
 
+  // .container-lg {
+  //   position: relative;
+  // }
+
+  .questionsAnswers {
+    // height: 200px;
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 100px;
+    height: 100px;
+    padding: 0.625rem 0;
+    border-radius: 0.3125rem;
+    background-color: #041fb6;
+    cursor: pointer;
+
+    .notifiche {
+      position: absolute;
+      top: -12px;
+      right: -12px;
+      padding: 4px 10px;
+      background-color: red;
+      color: white;
+      font-weight: bold;
+      border: 6px solid white;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+  .text-qa {
+    height: 100px;
+    width: 400px;
+    font-size: 18px;
+    color: black;
+    line-height: 40px;
+    vertical-align: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 1.25rem;
+    right: 9.25rem;
+
+    &::after {
+      content: "\f0da";
+      font-weight: 900;
+      font-family: "Font Awesome 5 Free";
+      font-size: 28px;
+      color: white;
+      position: absolute;
+      bottom: 0;
+      right: -8px;
+      // content: "\25B6";
+    }
+  }
+
   .head {
     li {
       display: inline-block;
@@ -110,6 +177,14 @@ export default {
   }
   h4 {
     color: white;
+  }
+
+  .visible {
+    display: block;
+  }
+
+  .invisible {
+    display: none;
   }
 }
 </style>
