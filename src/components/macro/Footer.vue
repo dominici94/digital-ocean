@@ -109,22 +109,24 @@ export default {
     position: fixed;
     bottom: 1.25rem;
     right: 1.25rem;
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     padding: 0.625rem 0;
     border-radius: 0.3125rem;
     background-color: #041fb6;
     cursor: pointer;
+    -webkit-box-shadow: 2px 2px 15px -1px rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 2px 15px -1px rgba(0, 0, 0, 0.4);
 
     .notifiche {
       position: absolute;
       top: -12px;
       right: -12px;
-      padding: 4px 10px;
+      padding: 0 7px;
       background-color: red;
       color: white;
       font-weight: bold;
-      border: 6px solid white;
+      border: 4px solid white;
       border-radius: 50%;
       cursor: pointer;
     }
@@ -134,18 +136,19 @@ export default {
     }
   }
   .text-qa {
-    height: 100px;
-    width: 400px;
+    height: 60px;
+    width: 375px;
     font-size: 18px;
     color: black;
-    line-height: 40px;
-    vertical-align: center;
+    line-height: 25px;
     background-color: white;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 5px 20px;
     position: fixed;
     bottom: 1.25rem;
-    right: 9.25rem;
+    right: 6.25rem;
+    -webkit-box-shadow: 2px 2px 15px -1px rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 2px 15px -1px rgba(0, 0, 0, 0.4);
 
     &::after {
       content: "\f0da";
@@ -154,9 +157,8 @@ export default {
       font-size: 28px;
       color: white;
       position: absolute;
-      bottom: 0;
+      bottom: 5px;
       right: -8px;
-      // content: "\25B6";
     }
   }
 
